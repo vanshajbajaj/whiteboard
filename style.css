@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* background-color: #FFFFFF; */
+    /* border:1px solid red; */
+    display: flex;
+    overflow: hidden;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#nav {
+    width: 99vw;
+    height: 8vh;
+    /* border:1px solid red; */
+    position: fixed;
+    top: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: opacity 0.5s;
+    background-color: #aaaaaa36;
+    box-shadow: 0px 0px 2px 2.5px #7bac4658;
+    border-radius: 10px;
+}
+
+#nblogo {
+
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin-left: 1%;
+
+}
+
+#nbimg {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 220%;
+    font-family: 'Monoton', cursive;
+    font-weight: 500;
+    color: #7bac46;
+    text-shadow: 0px 0px 1px rgb(180, 180, 180);
+
+    /* color: rgb(127, 255, 212); */
+
+}
+
+#nbfeatures {
+
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+
+}
+
+.sett {
+
+    width: 12%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid green; */
+    font-size: 18px;
+    background-color: #58585839;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px #7bac4691;
+
+}
+
+#rangebar {
+
+    width: 26%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid yellow; */
+
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 0.6em 1em;
+    border-radius: 3px;
+    /* background-color: #03bb56; */
+    /* color: #fff; */
+    /* border: 3px solid white; */
+    font-size: 15px;
+    font-weight: bold;
+    /* box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.324); */
+    box-shadow: 0px 0px 2px 1px #7bac4691;
+    text-shadow: 0px 0px 1px rgb(171, 171, 171);
+}
+
+button:hover {
+    box-shadow: 0px 0px 2px 1.5px rgba(0, 0, 0, 0.324);
+}
+
+.save {
+    background-color: #c3c3c3ac;
+    color: #7eac4c;
+}
+
+.clear {
+    background-color: #c3c3c3ac;
+    color: #7eac4c;
+}
+
+input[type="color"] {
+    width: 50%;
+    height: 60%;
+    border: 0;
+    box-shadow: 0px 0px 1px black;
+}
+
+#brushSizeOutput {
+    color: black;
+    font-weight: 400;
+    font-size: 15pt;
+}
+
+#brushSize {
+    /* background: linear-gradient(to right, #000428 0%, #004e92 100%); */
+    background-color: black;
+    height: 1px;
+    outline: none;
+    /* -webkit-appearance: none; */
+    cursor: ew-resize;
+    border-radius: 5px;
+    /* border: 3px solid white; */
+    accent-color: black;
+}
+
+#canvas {
+    cursor: crosshair;
+}
+
+#ftdiv {
+
+    width: 98.5%;
+    height: 6vh;
+    position: fixed;
+    bottom: 0.5%;
+    /* border:1px solid red; */
+    background-color: #aaaaaa36;
+    box-shadow: 0px 0px 2px 2.5px #7bac4658;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin: 10px auto;
+    /* box-shadow: 0px 0px 4px 2px #74747452; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    color: #7bac46;
+
+}
+
+.ftside {
+
+    height: 100%;
+    width: 20%;
+    /* color: rgba(255, 255, 255, 0.648); */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid green; */
+
+}
+
+.ftside2 {
+
+    height: 100%;
+    width: 14%;
+    margin-right: 4%;
+    /* color: rgba(255, 255, 255, 0.648); */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+
+}
+
+#ftmid {
+
+    width: 25%;
+    /* color: rgba(255, 255, 255, 0.648); */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+a {
+    text-decoration: none;
+    /* color: rgba(255, 255, 255, 0.628); */
+    color: #7bac46;
+    font-size: 18px;
+    margin: 10%;
+}
+
+@media (max-width: 800px) {
+
+    #ftdiv {
+        margin-top: 12vh;
+    }
+
+    .ftside2 {
+        width: 30%;
+        font-size: 10px;
+    }
+
+    .ftside1 {
+        width: 30%;
+        font-size: 10px;
+    }
+
+}

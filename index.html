@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://cdn.iconscout.com/icon/premium/png-512-thumb/sketch-board-4996753-4158566.png?f=avif&w=256"
+        type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat&family=Mukta:wght@300&family=Nunito+Sans:wght@300&family=Quicksand:wght@500&family=Rajdhani:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <title>WhiteBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <canvas id="canvas"></canvas>
+
+    <div id="nav">
+
+        <div id="nblogo">
+
+            <span id="nbimg">
+                WHITEBOARD
+            </span>
+
+        </div>
+
+        <div id="nbfeatures">
+
+            <div class="sett">
+                <input type="color" id="brushColorPicker" value="#000000">
+                <i class="zmdi zmdi-border-color"></i>
+            </div>
+
+            <div id="rangebar">
+                <input type="range" id="brushSize" value="5" min="1" max="10">
+                <output id="brushSizeOutput">
+                    5
+                </output>
+            </div>
+
+            <div class="sett">
+                <input type="color" id="colorPicker" value="#FFFFFF">
+                <i class="zmdi zmdi-fullscreen-alt"></i>
+            </div>
+
+            <button class="clear">
+                Clear
+            </button>
+
+            <button class="save">
+                Save
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id='ftdiv'>
+
+        <div class='ftside'>
+            <a class='ftlink' href="https://leetcode.com/vanshajbajaj/"><i class="flinks zmdi zmdi-code"></i>
+            </a>
+            <a class='ftlink' href="https://github.com/vanshajbajaj"><i class="flinks zmdi zmdi-github"></i>
+            </a>
+            <a class='ftlink' href='https://www.linkedin.com/in/vanshaj-b-2bb3b4120/'><i
+                    class="flinks zmdi zmdi-linkedin-box"></i></a>
+
+        </div>
+        <div id='ftmid'>
+
+
+
+        </div>
+        <div class='ftside2'>
+            <i class=" flinks zmdi zmdi-mood"></i> Made By Vanshaj Bajaj
+        </div>
+
+    </div>
+
+</body>
+
+</html>
